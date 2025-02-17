@@ -1,0 +1,209 @@
+body{
+    padding: 20px 100px;
+}
+/*Navigation container*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/*Logo image*/
+.navbar img{
+    height: 50px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display list items in a horizontal row */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation items */
+  nav ul li {
+    margin-right: 20px; /* Space between each link */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* Remove space after the last item */
+  }
+  
+  /* Navigation links */
+  nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Link color */
+    font-weight: bold;
+    padding: 5px 10px; /* Add padding around links */
+    transition: color 0.3s; /* Smooth color change on hover */
+  }
+  
+  nav ul li a:hover {
+    font-weight: bolder;
+  }
+
+/* Button */
+.button {
+    background-color: white;
+    border: 2px solid #555555;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.button:hover{
+    background-color: black;
+    color:#ffffff
+}
+
+
+/* Slogan */
+.slogan h1 {
+    padding:10px 20p;
+    font-weight: bold;
+    font-size: 100Spx;
+}
+
+/*Image Carousel*/
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/*
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.container-purpose {
+    display: grid;
+    grid-template-areas: 
+    'title text';
+    grid-template-columns: 1fr 3fr;
+}
+
+
+.container-team {
+  display: grid;
+  grid-template-areas: 
+  'hteam hteam hteam'
+  'Chee Dan Matt'
+  'Extra Extra Extra';
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container-team > div.hteam {
+  grid-area: hteam;
+}
+
+.container-team >div.Chee {
+  grid-area: Chee;
+}
+
+.container-team >div.Dan {
+  grid-area: Dan;
+}
+
+.container-team >div.Matt {
+  grid-area: Matt;
+}
+
+.container-team >div.Extra {
+  grid-area: Extra;
+}
+
+
+.dropdown {
+  width: 100%;
+  margin-bottom: 10px;
+  border-top: 2px solid #555555;
+}
+.dropdown-header {
+  color: Black;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.dropdown-content {
+  display: none;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+}
+
+.footer {
+  display: grid;
+  grid-template-areas: 
+  'phone Email info'
+  'Address Follow Copyright';
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer >div.phone {
+  grid-area: phone;
+}
+
+.footer >div.Email {
+  grid-area: Email;
+}
+
+.footer >div.info {
+  grid-area: info;
+}
+
+.footer >div.Address {
+  grid-area: Address;
+}
+
+.footer >div.Follow {
+  grid-area: Follow;
+}
+
+.footer >div.Copyright {
+  grid-area: Copyright;
+}
+
+/* On smaller screens, decrease text size 
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

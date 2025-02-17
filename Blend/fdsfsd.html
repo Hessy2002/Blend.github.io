@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Dropdowns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .dropdown {
+            width: 300px;
+            margin-bottom: 10px;
+        }
+        .dropdown-header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .dropdown-content {
+            display: none;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleDropdown(this)">Dropdown 1</div>
+        <div class="dropdown-content">Content for dropdown 1.</div>
+    </div>
+    <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleDropdown(this)">Dropdown 2</div>
+        <div class="dropdown-content">Content for dropdown 2.</div>
+    </div>
+    <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleDropdown(this)">Dropdown 3</div>
+        <div class="dropdown-content">Content for dropdown 3.</div>
+    </div>
+
+    <script>
+        function toggleDropdown(element) {
+            let content = element.nextElementSibling;
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
